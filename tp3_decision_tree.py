@@ -4,7 +4,7 @@
 # In[4]:
 
 
-data = sc.textFile("iris num.csv")
+data = sc.textFile("data/iris num.csv")
 
 
 # Display 2 elements to make sure data is loaded
@@ -191,7 +191,7 @@ metrics.fMeasure()
 # In[68]:
 
 
-df = spark.read.load("Iris1.csv", format="csv", sep=",", inferSchema="true", header="true")
+df = spark.read.load("data/Iris1.csv", format="csv", sep=",", inferSchema="true", header="true")
 
 
 # In[69]:
@@ -211,7 +211,7 @@ df.show(2)
 # In[74]:
 
 
-df1 = sqlContext.read.format("csv").options(header='true', inferSchema='true').load('Iris1.csv')
+df1 = sqlContext.read.format("csv").options(header='true', inferSchema='true').load('data/Iris1.csv')
 
 
 # In[75]:

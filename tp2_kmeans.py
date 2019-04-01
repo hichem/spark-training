@@ -14,7 +14,7 @@ from pyspark.mllib.clustering import KMeans
 # In[11]:
 
 
-data = sc.textFile("test.txt")
+data = sc.textFile("data/test.txt")
 
 
 # In[12]:

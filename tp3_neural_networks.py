@@ -6,7 +6,7 @@
 # In[1]:
 
 
-df = spark.read.load("Iris1.csv", format="csv", sep=",", inferSchema="true", header="true")
+df = spark.read.load("data/Iris1.csv", format="csv", sep=",", inferSchema="true", header="true")
 df.show(2)
 
 
